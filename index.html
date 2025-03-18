@@ -3,37 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
+    <title>Forms</title>
 </head>
 <body>
-    <div>
-        <h1 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Form</h1>
-        <!-- form -->
-        <form>
-            <!-- Name -->
-            <label for="name">First Name:</label>
-            <input name="name" type="text" placeholder="Enter your Name" />
-
-            <!-- Email -->
-            <label for="email">Email Address:</label>
-            <input name="email" type="email" placeholder="Enter your Email Address"/><br/><br/>
-
-            <!-- Password -->
-            <label for="password">Password:</label>
-            <input name="password" type="password" placeholder="Enter your Password"/><br><br>
-
-            <!-- Comment -->
-             <label for="comment">Comments</label>
-             <textarea name="comment" id="comment" rows="7" cols="50">
-             </textarea><br><br>
-
-             <p>Gender:
-             <input type="radio" name="male" value="male" /> male
-             <input type="radio" name="female" value="female" /> female
-            </p>
-             <br><br>
+    <h1>Register New Staff</h1>
+    <form action="">
+        <!-- username -->
+        <label for="username">User name:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" name="username" id="username"><br><br>
+        <!-- password -->
+        <label for="password">Password:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="password" name="password" id="password"><br><br>
+        <!-- Full name -->
+        <label for="fullname">Full Name:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" name="full name" id="full name"><br><br>
+        <!-- Email -->
+        <label for="email">Email:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="email" name="email" id="email"><br><br>
+        <!-- password -->
+        <label for="phone number">Phone Number:</label>
+        <input type="number" name="phone number" id="phone number"><br><br>
+        <!-- password -->
+        <label for="address">Address:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" name="address" id="address"><br><br>
+        <!-- designation -->
+         <label for="designation">Designation:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+         <select name="designation" id="">
+            <option value="">General Manager</option>
+            <option value="">HR</option>
+            <option value="">Employee</option>
+         </select>
+         <!-- other -->
+          <label for="other">Other:</label>
+          <input type="text"><br><br>
+          <!-- department -->
+           <label for="department">Department:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+           <select name="department" id="">
+              <option value="">Management</option>
+              <option value="">Finance</option>
+              <option value="">Marketing</option>
+              <option value="">IT</option>
+           </select><br><br>
+           <!-- hotel -->
+            <label for="hotel">Hotel Branch:</label>&nbsp;
+            <select name="hotel" id="">
+                <option value="">Terengganu</option>
+                <option value="">Kuala lumpur</option>
+                <option value="">Pearl Continental</option>
+            </select><br><br>
+            <!-- submit -->
              <input type="submit">
-        </form>
-    </div>
+             <!-- reset -->
+            <input type="reset">
+    </form>
 </body>
 </html>
